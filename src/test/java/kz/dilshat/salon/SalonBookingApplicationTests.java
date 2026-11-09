@@ -6,6 +6,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 import org.springframework.boot.resttestclient.TestRestTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Import(TestcontainersConfiguration.class)
@@ -16,6 +19,9 @@ class SalonBookingApplicationTests {
 	@Autowired
 	private TestRestTemplate restTemplate;
 
+	@Autowired
+	private JdbcTemplate jdbcTemplate;
+
 	@Test
 	void contextLoads() {
 		String response = restTemplate.getForObject(
@@ -24,6 +30,18 @@ class SalonBookingApplicationTests {
 		);
 
 		assertTrue(response.contains("\"status\":\"UP\""));
+
+		Integer tableCount = jdbcTemplate.queryForObject(
+				"""
+                SELECT COUNT(*)
+                FROM information_schema.tables
+                WHERE table_schema = 'public'
+                  AND table_name = 'salon'
+                """,
+				Integer.class
+		);
+
+		assertEquals(1, tableCount);
 	}
 
 }
