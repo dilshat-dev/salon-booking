@@ -1,0 +1,11 @@
+# Environment variables
+.env
+
+# Maven
+target/
+
+# IntelliJ IDEA
+.idea/
+
+# macOS
+.DS_Store

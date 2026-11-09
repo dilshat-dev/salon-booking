@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: salon-booking
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: salon-booking
+    description: Salon booking backend application
+    version: 0.1.0
