@@ -72,14 +72,10 @@ Wait until PostgreSQL reports as healthy.
 
 ### 4. Run the application
 
-Export the variables from `.env` into the current shell and start Spring
-Boot with the `local` profile:
+The application automatically loads environment variables from the .env file and uses the local profile by default.
 
 ``` bash
-set -a
-source .env
-set +a
-./mvnw spring-boot:run -Dspring-boot.run.profiles=local
+./mvnw spring-boot:run
 ```
 
 The application uses Flyway to apply database migrations. Hibernate
