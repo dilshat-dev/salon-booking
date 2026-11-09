@@ -1,4 +1,4 @@
-package kz.dilshat.salon_booking.salon;
+package kz.dilshat.salon.catalog;
 
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
 import org.testcontainers.junit.jupiter.Testcontainers;

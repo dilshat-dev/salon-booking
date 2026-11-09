@@ -1,4 +1,4 @@
-package kz.dilshat.salon_booking.salon;
+package kz.dilshat.salon.catalog;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;

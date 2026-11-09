@@ -1,4 +1,4 @@
-package kz.dilshat.salon_booking;
+package kz.dilshat.salon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

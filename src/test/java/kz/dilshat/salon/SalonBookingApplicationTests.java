@@ -1,4 +1,4 @@
-package kz.dilshat.salon_booking;
+package kz.dilshat.salon;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.resttestclient.autoconfigure.AutoConfigureTestRestTemplate;

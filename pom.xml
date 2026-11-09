@@ -8,24 +8,11 @@
 		<version>4.1.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>kz.dilshat</groupId>
+	<groupId>kz.dilshat.salon</groupId>
 	<artifactId>salon-booking</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
+	<name>salon-booking</name>
+	<description>Salon booking backend application</description>
 	<properties>
 		<java.version>25</java.version>
 		<maven.compiler.release>25</maven.compiler.release>
